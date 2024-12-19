@@ -8,7 +8,7 @@ ETHICAL_CHOICE = 1
 MAX_RISK_APPETITE = 2
 AMOUNT_TO_INVEST = 3
 
-data = pd.read_csv("content/20_Funds.csv")
+data = pd.read_csv("content\20_Funds.csv")
 first_row = list(data.head(1))
 
 MIN_INVEST_COL = first_row.index("Minimum Investment in £")
@@ -56,7 +56,7 @@ def check_row(row: list, inputs: list[str]) -> bool:
 
 def return_results(input_array: list[str]) -> list[list]:
 
-    with open("content/20_funds.csv", "r") as file:
+    with open("content\20_funds.csv", "r") as file:
 
         csv_reader = csv.reader(file)
         next(csv_reader)
