@@ -56,7 +56,7 @@ def check_row(row: list, inputs: list[str]) -> bool:
 
 def return_results(input_array: list[str]) -> list[list]:
 
-    with open("20_funds.csv", "r") as file:
+    with open("20_Funds.csv", "r") as file:
 
         csv_reader = csv.reader(file)
         next(csv_reader)
